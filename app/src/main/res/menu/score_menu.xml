@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="@string/scoreMenuquizzes"
+        android:id="@+id/quizzesScore"
+        android:icon="@drawable/score_quizzes_score_button"/>
+    <item android:title="@string/scoreMenuTasks"
+        android:id="@+id/tasksScore"
+        android:icon="@drawable/score_tasks_score_button"/>
+</menu>

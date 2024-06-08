@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="5dp">
+
+    <LinearLayout
+        android:id="@+id/receiverLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/general_rounded_corners_noborder"
+        android:backgroundTint="@color/chat_sender"
+        android:padding="10dp"
+        android:layout_marginEnd="30dp"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:id="@+id/receiverTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Esto es un ejemplo de texto para un mensaje de chat."
+            android:textSize="20sp"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/receiverDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:paddingStart="20dp"
+            android:paddingEnd="0dp"
+            tools:text="30/12/2024 23:23."
+            android:textSize="15sp"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/senderLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/general_rounded_corners_noborder"
+        android:backgroundTint="@color/chat_receiver"
+        android:padding="10dp"
+        android:layout_marginStart="30dp"
+        android:layout_alignParentEnd="true" >
+
+        <TextView
+        android:id="@+id/senderTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Esto es un ejemplo de texto para un mensaje de chat."
+        android:textSize="20sp"
+        android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/senderDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:paddingStart="20dp"
+            android:paddingEnd="0dp"
+            tools:text="30/12/2024 23:23."
+            android:textSize="15sp"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+</RelativeLayout>

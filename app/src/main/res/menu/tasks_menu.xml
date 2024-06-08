@@ -1,0 +1,8 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="@string/tasksMenuIncompleteTasks"
+        android:id="@+id/incompleteTasks"
+        android:icon="@drawable/tasks_incomplete_tasks_button"/>
+    <item android:title="@string/tasksMenuCompleteTasks"
+        android:id="@+id/completeTasks"
+        android:icon="@drawable/tasks_complete_tasks_button"/>
+</menu>

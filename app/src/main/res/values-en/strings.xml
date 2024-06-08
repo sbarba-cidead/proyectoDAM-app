@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--name of the app-->
+    <string name="app_name">Apple Tree</string>
+
+    <!--information for locale-->
+    <string name="language">en</string>
+    <string name="country">US</string>
+
+    <!--accessibility descriptions-->
+    <string name="appLogo_description">Application logo</string>
+    <string name="changeProfilePhoto_description">Button for changing profile photo</string>
+    <string name="changeUsernameButton_description">Button to accept username change</string>
+    <string name="changeEmailButton_description">Button to accept email change</string>
+    <string name="changePasswordButton_description">Button to accept password change</string>
+    <string name="passwordVisibilityButton_description">Button to display or hide password</string>
+
+    <!--error and warning messages-->
+    <string name="retrieveTasksError">Error retrieving tasks.\nPlease try again later.</string> Try again later.
+    <string name="completedTask">Task completed successfully.</string>.
+    <string name="completedTaskError">Task could not be completed.\nPlease try again later.</string>
+    <string name="uncompletedTask">Task marked as uncompleted.</string>
+    <string name="uncompletedTaskError">Could not mark as uncompleted.</string>
+    <string name="finishedQuiz">Test completed.</string>
+    <string name="finishedQuizError">Error saving test data.\nPlease try again later.</string>
+    <string name="question">Question %1$d</string>
+    <string name="recoveryEmail">Recovery email has been sent.</string>
+    <string name="passwordRecoveryError">Could not send recovery email.\nPlease try again later.</string>
+    <string name="passwordRecoveryCancelled">Operation cancelled.\nRecovery email was not sent.</string>
+    <string name="userError">User name cannot be empty.</string>
+    <string name="emailError">The email address cannot be empty.</string>
+    <string name="passwordError">Password cannot be empty.</string>
+    <string name="classGroupError">A class group must be selected.</string>
+    <string name="correctLogin">Signin successful.</string>
+    <string name="errorLogin">Session data is not correct.\nPlease try again later.</string>
+    <string name="invalidUsernameError">You must enter at least a first name and last name.</string>
+    <string name="invalidEmailError">You must enter a valid email address.</string>
+    <string name="passwordLengthError">Length must be 6 or greater.</string>
+    <string name="newUserCreated">New user created.</string>
+    <string name="existingUserError">Entered user already exists.\nPlease try again.</string>
+    <string name="newUserimageSuccess">User image successfully updated.</string>
+    <string name="newUserimageCancelled">Operation cancelled.\nImage has not been modified.</string>
+    <string name="newUserimageError">Could not change image.\nPlease try again later.</string>
+    <string name="newUsernameAlert">You must enter a new username.</string>.
+    <string name="newUsernameSuccess">Username successfully updated.</string>
+    <string name="newUsernameError">Could not change username.\nPlease try again later.</string>
+    <string name="newUsernameCancelled">Operation cancelled.\nUsername has not been changed.</string>
+    <string name="newEmailAlert">You must enter a new email address.</string>
+    <string name="newEmailSuccess">Email successfully updated.</string>
+    <string name="newEmailError">Could not change email.\nPlease try again later.</string>
+    <string name="invalidPassword">The password is invalid.\nPlease try again.</string>
+    <string name="newEmailCancelled">Operation cancelled.\nEmail has not been changed.</string>
+    <string name="newPasswordAlert">You must enter a new password.</string>
+    <string name="newPasswordSuccess">Password successfully updated.</string>
+    <string name="newPasswordError">Could not change password.\nPlease try again later.</string>
+    <string name="newPasswordCancelled">Operation cancelled.\nPassword has not been changed.</string>
+    <string name="deleteUserSuccess">User successfully deleted.</string>
+    <string name="deleteUserError">Could not delete user.\nPlease try again later.</string>
+    <string name="deleteUserCancelled">Operation cancelled.\nThe user was not deleted.</string>
+    <string name="saveNoteError">Note could not be saved.\nPlease try again later.</string>
+    <string name="saveNote">Note successfully saved.</string>
+    <string name="eraseNoteCancelled">Operation cancelled.\nThe note was not deleted.</string>
+    <string name="eraseNoteError">Could not delete note.\nPlease try again later.</string>
+    <string name="eraseNoteSuccess">The note was successfully deleted.</string>.
+    <string name="notFound">No matches.</string>
+    <string name="retrieveScoreError">Error retrieving results.\nlease try again later.</string>
+
+    <!--startup and registration screen-->
+    <string name="usernameHint">first and last name</string>
+    <string name="userEmailHint">email address</string>
+    <string name="passwordHint">password</string>
+    <string name="resetPasswordLink_text">Forgot your password?</string>
+    <string name="loginButton_text">Sign in</string>
+    <string name="registerButton_text">Register</string>
+    <string name="login_text">Already have an account?</string>
+    <string name="loginLink_text">Sign in here.</string>
+    <string name="register_text">Don\'t have a user yet?</string>
+    <string name="registerLink_text">Register here.</string>
+    <string name="passwordRecoveryDialog">Enter your email to recover your password.</string>
+    <string name="acceptButton">Accept</string>
+    <string name="defaultClassGroupDropdown">class and group</string>
+
+    <!--Main menu screen-->
+    <string name="quizzesButton_text">Tests</string>
+    <string name="notesButton_text">Notes</string>
+    <string name="tasksButton_text">Tasks</string>
+    <string name="messagesButton_text">Messages</string>
+
+    <!--notes screen-->
+    <string name="nonotes_text">No created notes.</string>.
+    <string name="eraseNoteDialog">Note will be deleted, continue?</string>
+    <string name="eraseButton">Delete</string>
+    <string name="cancelButton">Cancel</string>
+
+    <!--screen for creating or editing notes-->
+    <string name="noteTitleHint">Title</string>
+    <string name="noteContentHint">Note</string>
+    <string name="noteLastEdited_text">Last edit:</string>
+
+    <!--messages screen-->
+    <string name="newMessageHint">new message</string>
+
+    <!--tests screen-->
+    <string name="nextQuestionButton_text">Next</string>
+    <string name="finishButton_text">Finish</string>
+    <string name="noquizzes_text">No created tests</string>
+
+    <!--tasks screen-->
+    <string name="tasksMenuIncompleteTasks">Pending</string>
+    <string name="tasksMenuCompleteTasks">Completed</string>
+    <string name="notasks_text">No created tasks.</string>
+    <string name="notasksCalendar_text">No tasks created for this day.</string>
+    <string name="noIncompleteTasks_text">No pending tasks.</string>
+    <string name="noCompleteTasks_text">No completed tasks.</string>
+    <string name="dueTimeTaskModelLabel">DueDate:</string>
+    <string name="completeTimeTaskModelLabel">Completed:</string>
+
+    <!--tracking screen-->
+    <string name="userScoreTitle">User tracking.</string>
+    <string name="noresultquizzesScore_text">No tests attempted.</string>
+    <string name="noresultTasksScore_text">No completed tasks.</string>
+    <string name="noresultIncorrectQuestions_text">No questions failed.</string>
+    <string name="quizzesScoreNumberLabel">Completed tests:</string>
+    <string name="tasksScoreNumberLabel">Completed tasks:</string>
+    <string name="scoreMenuquizzes">Tests</string>
+    <string name="scoreMenuTasks">Tasks</string>
+    <string name="quizzesAttemptsLabel">Attempts made:</string>
+    <string name="quizzesAverageGradeLabel">Average grade:</string>
+    <string name="attemptLabel">Attempt</string>
+    <string name="attemptDateLabel">Date:</string>
+    <string name="completeDateLabel">Completed:</string>
+    <string name="lateDateLabel">Delay:</string>
+    <string name="days">days</string>
+    <string name="dueDateLabel">DueDate:</string>
+    <string name="attemptedLabel">Completed:</string>
+    <string name="durationLabel">Duration:</string>
+    <string name="questionsLabel">Questions:</string>
+    <string name="correctAnswersLabel">Right:</string>
+    <string name="incorrectAnswersLabel">Wrong:</string>
+    <string name="gradeLabel">Grade:</string>
+    <string name="incorrectQuestionsLabel">Failed questions:</string>
+
+    <!--user configuration screen-->
+    <string name="userConfigTitle">User configuration</string>
+    <string name="newUsernameHint">new name</string>
+    <string name="newEmailHint">new email address</string>
+    <string name="newPasswordHint">new password</string>
+    <string name="deleteAccountButton_text">Delete account</string>
+    <string name="noVerifiedEmailText">There is a new email pending verification</string>
+    <string name="deleteUserDialog">If you delete the user you will lose all data and will not be able to recover it.\n\nDo you want to proceed?</string>
+    <string name="deleteUserButton">Delete user</string>
+    <string name="passwordDialog">Enter the current password to continue.</string>
+
+</resources>

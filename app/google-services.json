@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "589309142764",
+    "firebase_url": "https://appletreeapp-sbg-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "appletreeapp-sbg",
+    "storage_bucket": "appletreeapp-sbg.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:589309142764:android:01c4346499c86af0c4a7c9",
+        "android_client_info": {
+          "package_name": "com.sbg.appletreeapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAhVQJOmFwqynDgMfCosbo63OqbUXLuDxU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <style name="CalendarViewCustomLight" parent="Theme.AppCompat">
+        <!--selected day-->
+        <item name="colorAccent">@color/light_grey</item>
+        <!--calendar background-->
+        <item name="android:background">@color/white_transparent</item>
+        <!--day numbers-->
+        <item name="android:textColorPrimary">@color/primary_dark</item>
+        <!--week day names-->
+        <item name="android:textColorSecondary">@color/black</item>
+    </style>
+
+    <style name="CalendarViewCustomDark" parent="Theme.AppCompat">
+        <!--selected day-->
+        <item name="colorAccent">@color/light_grey</item>
+        <!--calendar background-->
+        <item name="android:background">@color/primary_dark</item>
+        <!--day numbers-->
+        <item name="android:textColorPrimary">@color/white</item>
+        <!--week day names-->
+        <item name="android:textColorSecondary">@color/white</item>
+    </style>
+</resources>

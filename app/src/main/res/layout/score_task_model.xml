@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="20dp"
+    android:orientation="vertical"
+    android:background="@drawable/general_rounded_corners_noborder"
+    android:backgroundTint="@color/primary_light"
+    android:layout_margin="5dp"
+    android:id="@+id/taskLayout">
+
+    <TextView
+        android:id="@+id/taskName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        tools:text="Nombre tarea"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/white" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dueDateLabel"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:breakStrategy="simple"
+            android:hyphenationFrequency="none"
+            android:textAlignment="center"/>
+
+
+        <TextView
+            android:id="@+id/dueDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="30/12/2024 24:22"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:breakStrategy="simple"
+            android:paddingHorizontal="10dp"
+            android:hyphenationFrequency="none"
+            android:textAlignment="viewEnd"
+            android:visibility="visible"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/completeDateLabel"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:breakStrategy="simple"
+            android:hyphenationFrequency="none"
+            android:textAlignment="center"/>
+
+
+        <TextView
+            android:id="@+id/completeDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="30/12/2024 24:22"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:breakStrategy="simple"
+            android:paddingHorizontal="10dp"
+            android:hyphenationFrequency="none"
+            android:textAlignment="viewEnd"
+            android:visibility="visible"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/lateDateLayout"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:layout_gravity="center"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lateDateLabel"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:breakStrategy="simple"
+            android:layout_toStartOf="@+id/difference"
+            android:hyphenationFrequency="none"
+            android:textAlignment="center"/>
+
+
+        <TextView
+            android:id="@+id/difference"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="3"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:breakStrategy="simple"
+            android:paddingHorizontal="10dp"
+            android:layout_toStartOf="@+id/days"
+            android:hyphenationFrequency="none"/>
+
+        <TextView
+            android:id="@+id/days"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/days"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:breakStrategy="simple"
+            android:paddingStart="0dp"
+            android:paddingEnd="10dp"
+            android:hyphenationFrequency="none"
+            android:layout_alignParentEnd="true"
+            android:textAlignment="viewEnd"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

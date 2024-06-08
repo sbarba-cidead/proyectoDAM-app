@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    android:background="@drawable/background"
+    tools:context=".app_screens.UserConfigScreen">
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="30dp"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        app:cardCornerRadius="8dp">
+
+        <ProgressBar
+            android:id="@+id/userimageProgressBar"
+            android:layout_width="50dp"
+            android:paddingHorizontal="13dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/userimage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/userimagedefault"
+            android:scaleType="centerCrop"
+            android:contentDescription="@string/changeProfilePhoto_description"
+            android:visibility="visible" />
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/userConfigTitle"
+        android:layout_gravity="center"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:layout_marginBottom="40dp" />
+
+    <LinearLayout
+        android:id="@+id/usernameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/general_rounded_corners_border_transp"
+        android:layout_marginVertical="20dp"
+        android:visibility="visible" >
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="5dp"
+            android:layout_gravity="center"
+            android:src="@drawable/userconfig_user_icon"
+            app:tint="@color/dark_grey" />
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="40"
+            android:padding="10dp"
+            android:textSize="21sp"
+            android:textColor="@color/dark_grey"
+            tools:text="Nombre Apellido" />
+
+        <ImageButton
+            android:id="@+id/usernameEditButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/general_circle_background"
+            android:backgroundTint="@color/transparent"
+            android:src="@drawable/userconfig_edit_button"
+            android:layout_gravity="center"
+            android:elevation="10dp"
+            app:tint="@color/dark_grey" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/usernameEditLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="20dp"
+        android:background="@drawable/general_rounded_corners_border_transp"
+        android:visibility="gone" >
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="5dp"
+            android:layout_gravity="center"
+            android:src="@drawable/userconfig_user_icon"
+            app:tint="@color/dark_grey" />
+
+        <EditText
+            android:id="@+id/userEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="40"
+            android:autofillHints="username"
+            android:background="@color/transparent"
+            android:elevation="10dp"
+            android:hint="@string/newUsernameHint"
+            android:inputType="text"
+            android:maxWidth="480dp"
+            android:padding="10dp"
+            android:textColorHint="@color/light_grey"
+            android:textSize="22sp"
+            android:textColor="@color/dark_grey"
+            tools:ignore="VisualLintTextFieldSize" />
+
+        <ImageButton
+            android:id="@+id/usernameChangeCancelButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/general_circle_background"
+            android:backgroundTint="@color/transparent"
+            android:src="@drawable/notes_close_button"
+            android:layout_gravity="center"
+            android:elevation="10dp"
+            app:tint="@color/dark_grey" />
+
+        <ImageButton
+            android:id="@+id/usernameChangeAcceptButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/general_circle_background"
+            android:backgroundTint="@color/transparent"
+            android:src="@drawable/userconfig_accept_button"
+            android:layout_gravity="center"
+            android:elevation="10dp"
+            android:contentDescription="@string/changeUsernameButton_description"
+            app:tint="@color/dark_grey" />
+
+        <ProgressBar
+            android:id="@+id/userProgressBar"
+            android:layout_width="50dp"
+            android:paddingHorizontal="13dp"
+            android:layout_height="match_parent"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/emailLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp" >
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/general_rounded_corners_border_transp"
+        android:visibility="visible" >
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="5dp"
+            android:layout_gravity="center"
+            android:src="@drawable/userconfig_email_icon"
+            app:tint="@color/dark_grey" />
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="40"
+            android:padding="10dp"
+            android:textSize="21sp"
+            android:textColor="@color/dark_grey"
+            tools:text="email@email.es" />
+
+        <ImageButton
+            android:id="@+id/emailEditButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/general_circle_background"
+            android:backgroundTint="@color/transparent"
+            android:src="@drawable/userconfig_edit_button"
+            android:layout_gravity="center"
+            android:elevation="10dp"
+            app:tint="@color/dark_grey" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/noVerifiedEmailText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="@string/noVerifiedEmailText"
+            android:textColor="@color/transparent"
+            android:textStyle="bold"
+            android:gravity="end" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/emailEditLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="20dp"
+        android:background="@drawable/general_rounded_corners_border_transp"
+        android:visibility="gone" >
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="5dp"
+            android:layout_gravity="center"
+            android:src="@drawable/userconfig_email_icon"
+            app:tint="@color/dark_grey" />
+
+        <EditText
+            android:id="@+id/emailEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="40"
+            android:autofillHints="emailAddress"
+            android:background="@color/transparent"
+            android:elevation="10dp"
+            android:hint="@string/newEmailHint"
+            android:inputType="textEmailAddress"
+            android:maxWidth="480dp"
+            android:padding="10dp"
+            android:textColorHint="@color/light_grey"
+            android:textColor="@color/dark_grey"
+            android:textSize="22sp"
+            tools:ignore="VisualLintTextFieldSize" />
+
+        <ImageButton
+            android:id="@+id/emailChangeCancelButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/general_circle_background"
+            android:backgroundTint="@color/transparent"
+            android:src="@drawable/notes_close_button"
+            android:layout_gravity="center"
+            android:elevation="10dp"
+            app:tint="@color/dark_grey" />
+
+        <ImageButton
+            android:id="@+id/emailChangeAcceptButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/general_circle_background"
+            android:backgroundTint="@color/transparent"
+            android:src="@drawable/userconfig_accept_button"
+            android:layout_gravity="center"
+            android:elevation="10dp"
+            android:contentDescription="@string/changeEmailButton_description"
+            app:tint="@color/dark_grey" />
+
+        <ProgressBar
+            android:id="@+id/emailProgressBar"
+            android:layout_width="50dp"
+            android:paddingHorizontal="13dp"
+            android:layout_height="match_parent"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/passwordLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginVertical="20dp"
+        android:background="@drawable/general_rounded_corners_border_transp"
+        android:visibility="visible" >
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="5dp"
+            android:layout_gravity="center"
+            android:src="@drawable/userconfig_password_icon"
+            app:tint="@color/dark_grey" />
+
+        <TextView
+            android:id="@+id/password"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="21sp"
+            tools:text="contraseña"
+            android:textColor="@color/dark_grey"
+            android:layout_weight="40"
+            android:padding="10dp"/>
+
+        <ImageButton
+            android:id="@+id/passwordEditButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/general_circle_background"
+            android:backgroundTint="@color/transparent"
+            android:src="@drawable/userconfig_edit_button"
+            android:layout_gravity="center"
+            android:elevation="10dp"
+            app:tint="@color/dark_grey" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/passwordEditLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/general_rounded_corners_border_transp"
+        android:layout_marginVertical="20dp"
+        android:visibility="gone" >
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="5dp"
+            android:layout_gravity="center"
+            android:src="@drawable/userconfig_password_icon"
+            app:tint="@color/dark_grey" />
+
+        <EditText
+            android:id="@+id/passwordEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="40"
+            android:textSize="22sp"
+            android:padding="10dp"
+            android:autofillHints="password"
+            android:background="@color/transparent"
+            android:hint="@string/newPasswordHint"
+            android:inputType="textPassword"
+            android:textColorHint="@color/light_grey"
+            tools:ignore="VisualLintTextFieldSize" />
+
+        <ImageButton
+            android:id="@+id/passwordVisibilityButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/login_password_notvisible_button"
+            android:backgroundTint="@color/transparent"
+            android:layout_gravity="center"
+            app:tint="@color/light_grey"
+            android:contentDescription="@string/passwordVisibilityButton_description" />
+
+        <ImageButton
+            android:id="@+id/passwordChangeCancelButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/general_circle_background"
+            android:backgroundTint="@color/transparent"
+            android:src="@drawable/notes_close_button"
+            android:layout_gravity="center"
+            android:elevation="10dp"
+            app:tint="@color/dark_grey" />
+
+        <ImageButton
+            android:id="@+id/passwordChangeAcceptButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/general_circle_background"
+            android:backgroundTint="@color/transparent"
+            android:src="@drawable/userconfig_accept_button"
+            android:elevation="10dp"
+            android:contentDescription="@string/changePasswordButton_description"
+            app:tint="@color/dark_grey" />
+
+        <ProgressBar
+            android:id="@+id/passwordProgressBar"
+            android:layout_width="50dp"
+            android:paddingHorizontal="13dp"
+            android:layout_height="match_parent"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/deleteUserButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/deleteAccountButton_text"
+        android:backgroundTint="@color/light_red"
+        android:layout_gravity="center"
+        android:stateListAnimator="@null"
+        android:elevation="10dp"
+        android:layout_marginTop="80dp" />
+
+    <ProgressBar
+        android:id="@+id/deleteUserProgressBar"
+        android:layout_width="24dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:visibility="gone"/>
+
+</LinearLayout>

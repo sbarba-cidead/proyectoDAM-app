@@ -1,0 +1,153 @@
+<resources>
+    <!--nombre de la app-->
+    <string name="app_name">Apple Tree</string>
+
+    <!--información para locale-->
+    <string name="language">es</string>
+    <string name="country">ES</string>
+
+    <!--descripciones de accesibilidad-->
+    <string name="appLogo_description">Logo de la aplicación</string>
+    <string name="changeProfilePhoto_description">Botón para cambiar foto de perfil</string>
+    <string name="changeUsernameButton_description">Botón para aceptar cambio de nombre de usuario</string>
+    <string name="changeEmailButton_description">Botón para aceptar cambio de email</string>
+    <string name="changePasswordButton_description">Botón para aceptar cambio de contraseña</string>
+    <string name="passwordVisibilityButton_description">Botón para mostrar u ocultar la contraseña</string>
+
+    <!--mensajes de error y advertencias-->
+    <string name="retrieveTasksError">Error al recuperar las tareas.\nInténtalo de nuevo más tarde.</string>
+    <string name="completedTask">Tarea completada correctamente.</string>
+    <string name="completedTaskError">La tarea no se pudo completar.\nInténtalo de nuevo más tarde.</string>
+    <string name="uncompletedTask">Tarea marcada como no completada.</string>
+    <string name="uncompletedTaskError">No se pudo marcar como no completada.\nInténtalo de nuevo más tarde.</string>
+    <string name="finishedQuiz">Test finalizado.</string>
+    <string name="finishedQuizError">Error al guardar los datos del test.\nInténtalo de nuevo más tarde.</string>
+    <string name="question">Pregunta %1$d</string>
+    <string name="recoveryEmail">Se ha enviado el email de recuperación.</string>
+    <string name="passwordRecoveryError">No se ha podido enviar el email de recuperación.\nInténtelo de nuevo más tarde</string>
+    <string name="passwordRecoveryCancelled">Operación cancelada.\nNo se ha enviado el email de recuperación.</string>
+    <string name="userError">El nombre de usuario no puede estar vacío.</string>
+    <string name="emailError">La dirección email no puede estar vacía.</string>
+    <string name="passwordError">La contraseña no puede estar vacía.</string>
+    <string name="classGroupError">Debes seleccionar un grupo de clase.</string>
+    <string name="correctLogin">Inicio de sesión correcto.</string>
+    <string name="errorLogin">Los datos de sesión no son correctos.\nInténtalo de nuevo.</string>
+    <string name="invalidUsernameError">Debes introducir al menos un nombre y un apellido.</string>
+    <string name="invalidEmailError">Debes introducir una dirección email válida.</string>
+    <string name="passwordLengthError">La longitud debe ser 6 o superior.</string>
+    <string name="newUserCreated">Nuevo usuario creado.</string>
+    <string name="existingUserError">El usuario introducido ya existe.\nInténtalo de nuevo.</string>
+    <string name="newUserimageSuccess">Imagen de usuario actualizada correctamente.</string>
+    <string name="newUserimageCancelled">Operación cancelada.\nLa imagen no se ha modificado.</string>
+    <string name="newUserimageError">No se ha podido cambiar la imagen.\nInténtalo de nuevo más tarde.</string>
+    <string name="newUsernameAlert">Debes introducir un nuevo nombre de usuario.</string>
+    <string name="newUsernameSuccess">Nombre de usuario actualizado correctamente.</string>
+    <string name="newUsernameError">No se ha podido cambiar el usuario.\nInténtalo de nuevo más tarde.</string>
+    <string name="newUsernameCancelled">Operación cancelada.\nNo se ha cambiado el usuario.</string>
+    <string name="newEmailAlert">Debes introducir una nueva dirección email.</string>
+    <string name="newEmailSuccess">Email actualizado correctamente.</string>
+    <string name="newEmailError">No se ha podido cambiar el email.\nInténtalo de nuevo más tarde.</string>
+    <string name="invalidPassword">La contraseña no es válida.\nInténtalo de nuevo.</string>
+    <string name="newEmailCancelled">Operación cancelada.\nNo se ha cambiado el email.</string>
+    <string name="newPasswordAlert">Debes introducir una nueva contraseña.</string>
+    <string name="newPasswordSuccess">Contraseña actualizada correctamente.</string>
+    <string name="newPasswordError">No se ha podido cambiar la contraseña.\nInténtalo de nuevo más tarde.</string>
+    <string name="newPasswordCancelled">Operación cancelada.\nNo se ha cambiado la contraseña.</string>
+    <string name="deleteUserSuccess">Usuario borrado correctamente.</string>
+    <string name="deleteUserError">No se ha podido borrar el usuario.\nInténtalo de nuevo más tarde.</string>
+    <string name="deleteUserCancelled">Operación cancelada.\nNo se ha eliminado el usuario.</string>
+    <string name="saveNoteError">La nota no se pudo guardar.\nInténtalo de nuevo más tarde.</string>
+    <string name="saveNote">La nota se ha guardado correctamente.</string>
+    <string name="eraseNoteCancelled">Operación cancelada.\nLa nota no se ha borrado.</string>
+    <string name="eraseNoteError">No se ha podido borrar la nota.\nInténtalo de nuevo más tarde.</string>
+    <string name="eraseNoteSuccess">La nota se ha borrado correctamente.</string>
+    <string name="notFound">No hay coinciencias.</string>
+    <string name="retrieveScoreError">Error al recuperar los resultados.\nInténtalo de nuevo más tarde.</string>
+
+    <!--pantalla de inicio y de registro-->
+    <string name="usernameHint">nombre y apellidos</string>
+    <string name="userEmailHint">dirección email</string>
+    <string name="passwordHint">contraseña</string>
+    <string name="resetPasswordLink_text">¿Has olvidado tu contraseña?</string>
+    <string name="loginButton_text">Iniciar sesión</string>
+    <string name="registerButton_text">Registrarse</string>
+    <string name="login_text">¿Ya tienes cuenta?</string>
+    <string name="loginLink_text">Inicia sesión aquí.</string>
+    <string name="register_text">¿No tienes usuario?</string>
+    <string name="registerLink_text">Regístrate aquí.</string>
+    <string name="passwordRecoveryDialog">Introduce tu email para recuperar la contraseña.</string>
+    <string name="acceptButton">Aceptar</string>
+    <string name="defaultClassGroupDropdown">clase y grupo</string>
+
+    <!--pantalla principal de menú-->
+    <string name="quizzesButton_text">Tests</string>
+    <string name="notesButton_text">Notas</string>
+    <string name="tasksButton_text">Tareas</string>
+    <string name="messagesButton_text">Mensajes</string>
+
+    <!--pantalla de notas-->
+    <string name="nonotes_text">No hay notas creadas.</string>
+    <string name="eraseNoteDialog">Se va a borrar la nota, ¿continuar?</string>
+    <string name="eraseButton">Borrar</string>
+    <string name="cancelButton">Cancelar</string>
+
+    <!--pantalla para crear o editar notas-->
+    <string name="noteTitleHint">Título</string>
+    <string name="noteContentHint">Nota</string>
+    <string name="noteLastEdited_text">Última edición:</string>
+
+    <!--pantalla de mensajes-->
+    <string name="newMessageHint">nuevo mensaje</string>
+
+    <!--pantalla de tests-->
+    <string name="nextQuestionButton_text">Siguiente</string>
+    <string name="finishButton_text">Terminar</string>
+    <string name="noquizzes_text">No hay tests creados.</string>
+
+    <!--pantalla de tareas-->
+    <string name="tasksMenuIncompleteTasks">Pendientes</string>
+    <string name="tasksMenuCompleteTasks">Completadas</string>
+    <string name="notasks_text">No hay tareas creadas.</string>
+    <string name="notasksCalendar_text">No hay tareas creadas para este día.</string>
+    <string name="noIncompleteTasks_text">No hay tareas pendientes.</string>
+    <string name="noCompleteTasks_text">No hay tareas completadas.</string>
+    <string name="dueTimeTaskModelLabel">Límite:</string>
+    <string name="completeTimeTaskModelLabel">Terminada:</string>
+
+    <!--pantalla de seguimiento-->
+    <string name="userScoreTitle">Seguimiento de usuario</string>
+    <string name="noresultquizzesScore_text">No se han intentado tests.</string>
+    <string name="noresultTasksScore_text">No se han completado tareas.</string>
+    <string name="noresultIncorrectQuestions_text">No hay preguntas falladas.</string>
+    <string name="quizzesScoreNumberLabel">Tests completados:</string>
+    <string name="tasksScoreNumberLabel">Tareas completadas:</string>
+    <string name="scoreMenuquizzes">Tests</string>
+    <string name="scoreMenuTasks">Tareas</string>
+    <string name="quizzesAttemptsLabel">Intentos realizados:</string>
+    <string name="quizzesAverageGradeLabel">Nota media:</string>
+    <string name="attemptLabel">Intento</string>
+    <string name="attemptDateLabel">Fecha:</string>
+    <string name="completeDateLabel">Completada:</string>
+    <string name="lateDateLabel">Retraso:</string>
+    <string name="days">días</string>
+    <string name="dueDateLabel">Fecha límite:</string>
+    <string name="attemptedLabel">Realizado:</string>
+    <string name="durationLabel">Duración:</string>
+    <string name="questionsLabel">Preguntas:</string>
+    <string name="correctAnswersLabel">Aciertos:</string>
+    <string name="incorrectAnswersLabel">Fallos:</string>
+    <string name="gradeLabel">Nota:</string>
+    <string name="incorrectQuestionsLabel">Preguntas falladas:</string>
+
+    <!--pantalla de configuración de usuario-->
+    <string name="userConfigTitle">Configuración de usuario</string>
+    <string name="newUsernameHint">nuevo nombre</string>
+    <string name="newEmailHint">nuevo email</string>
+    <string name="newPasswordHint">nueva contraseña</string>
+    <string name="deleteAccountButton_text">Borrar cuenta</string>
+    <string name="noVerifiedEmailText">Hay un nuevo email pendiente de verificación.</string>
+    <string name="deleteUserDialog">Si borras el usuario perderás todos los datos y no podrás recuperarlos.\n\n¿Deseas continuar?</string>
+    <string name="deleteUserButton">Borrar usuario</string>
+    <string name="passwordDialog">Introduzce la contraseña actual para continuar.</string>
+
+</resources>

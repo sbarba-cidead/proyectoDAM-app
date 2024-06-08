@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.screen.portrait"
+        android:required="true" />
+
+    <supports-screens
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="false" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/appletree_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/appletree_icon"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppleTreeApp"
+        tools:targetApi="34">
+        <profileable android:enabled="true" />
+        <activity
+            android:name=".app_screens.SplashScreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".app_screens.LoginScreen"
+            android:exported="false" />
+        <activity
+            android:name=".app_screens.RegistrationScreen"
+            android:exported="false" />
+        <activity
+            android:name=".app_screens.MainMenuScreen"
+            android:exported="false" />
+        <activity
+            android:name=".app_screens.UserConfigScreen"
+            android:exported="false" />
+        <activity
+            android:name=".app_screens.QuizzesScreen"
+            android:windowSoftInputMode="stateVisible|adjustPan"
+            android:exported="false" />
+        <activity
+            android:name=".app_screens.secondary_screens.QuizQuestionScreen"
+            android:exported="false" />
+        <activity
+            android:name=".app_screens.NotesScreen"
+            android:windowSoftInputMode="stateVisible|adjustPan"
+            android:exported="false" />
+        <activity
+            android:name=".app_screens.secondary_screens.CreateEditNoteScreen"
+            android:exported="false" />
+        <activity
+            android:name=".app_screens.TasksScreen"
+            android:windowSoftInputMode="stateVisible|adjustPan"
+            android:exported="false" />
+        <activity
+            android:name=".app_screens.MessagesScreen"
+            android:windowSoftInputMode="stateVisible|adjustPan"
+            android:exported="false" />
+        <activity
+            android:name=".app_screens.ScoreScreen"
+            android:exported="false" />
+        <activity
+            android:name=".app_screens.secondary_screens.QuizAttemptsScoreScreen"
+            android:exported="false" />
+        <activity
+            android:name=".app_screens.secondary_screens.AttemptScoreScreen"
+            android:exported="false" />
+    </application>
+
+</manifest>
